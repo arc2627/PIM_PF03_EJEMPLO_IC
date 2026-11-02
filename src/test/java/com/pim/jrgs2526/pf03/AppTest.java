@@ -12,14 +12,14 @@ public class AppTest {
     public void testCalcularAprobado() {
         App main = new App();
         int resultado = main.calcularNota(6);
-        Assertions.assertEquals(1, resultado);
+        Assertions.assertEquals(App.APROBADO, resultado);
     }
 
     @Test
     public void testCalcularSuspenso() {
         App main = new App();
         int resultado = main.calcularNota(2);
-        Assertions.assertEquals(-1, resultado);
+        Assertions.assertEquals(App.SUSPENSO, resultado);
     }
 
     @Test
