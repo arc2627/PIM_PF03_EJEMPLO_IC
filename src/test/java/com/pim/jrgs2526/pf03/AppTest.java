@@ -29,7 +29,7 @@ public class AppTest {
             int resultado = main.calcularNota(63);
         }
         catch (IllegalArgumentException e) {
-            Assertions.assertEquals("Error al calcular la nota", e.getMessage());
+            Assertions.assertEquals(App.ERROR_AL_CALCULAR_LA_NOTA, e.getMessage());
             return;
         }
         Assertions.fail();

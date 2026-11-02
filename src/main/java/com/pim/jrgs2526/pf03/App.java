@@ -6,6 +6,7 @@ package com.pim.jrgs2526.pf03;
  */
 public class App 
 {
+    public static final String ERROR_AL_CALCULAR_LA_NOTA = "Error al calcular la nota";
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -16,6 +17,6 @@ public class App
             return -1;
         if (nota >= 5 && nota <= 10)
             return 1;
-        throw new IllegalArgumentException("Error al calcular nota");
+        throw new IllegalArgumentException(ERROR_AL_CALCULAR_LA_NOTA);
     }
 }
